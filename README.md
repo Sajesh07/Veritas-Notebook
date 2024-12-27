@@ -1,4 +1,3 @@
-# Veritas-Notebook
-A MERN Website to make taking notes easy.
+A MERN-based website designed to simplify note-taking.  
 
-Veritas is a Latin word meaning "truth." It symbolizes the pursuit and acknowledgment of objective reality and authenticity, serving as a guiding principle in various fields from philosophy to law, emphasizing the importance of honesty and accuracy in understanding the world.
+'Veritas,' a Latin term meaning 'truth,' embodies the pursuit of objective reality and authenticity. It serves as a guiding principle across disciplines such as philosophy and law, underscoring the significance of honesty and precision in understanding the world.
