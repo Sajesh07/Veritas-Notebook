@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main */
+
+.main {
+  display: flex;
+}
+
+/* Sidebar Css Starts Here */
+
+.sidebar {
+  position: fixed;
+  width: 100px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.logo {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  margin: 15px 15px 0px 15px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  border: 0.5px solid rgb(166, 164, 157);
+}
+
+.taskbar {
+  width: 70px;
+  height: 80vh;
+  background-color: white;
+  margin: 15px 15px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  border: 0.5px solid rgb(166, 164, 157);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taskButton {
+  font-size: 60px;
+  margin: 5px 0px;
+  color: rgb(166, 164, 157);
+  transition: transform 0.2s;
+}
+
+.taskButton:hover {
+  transform: scale(1.1); /* Increase the size on hover */
+}
+
+.taskButton:last-child {
+  font-size: 50px;
+  margin-top: auto; /* Push the last button to the bottom */
+}
+
+/* Sidebar Css Ends Here */
+
+/* Home Starts Here */
+
+/* Home.module.css */
+
+/* Home.module.css */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 20px 27px 110px; /* Adjusted margin to accommodate the sidebar */
+  width: calc(100% - 120px); /* Adjusted width to account for sidebar */
+  border-radius: 20px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  border: 0.5px solid rgb(174, 166, 166);
+  padding: 10px; /* Add padding to ensure inputs stay inside */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  flex: 1; /* Allow the home container to grow vertically */
+  min-height: 94vh; /* Ensure a minimum height of 94% of the viewport height */
+}
+
+.homeForm {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.textTitle,
+.textDesc {
+  width: calc(100% - 90px); /* Adjusted width to fit within the .home div */
+  height: 30px;
+  margin: 10px 25px; /* Adjusted margin */
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 20px;
+  outline: none;
+  border: 2px solid rgb(147, 127, 127);
+  word-wrap: break-word;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.textDesc {
+  height: 85%;
+}
+
+.submitBtn {
+  align-self: flex-end; /* Align the button to the right end */
+  margin-right: 40px; /* Adjust margin as needed */
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: rgb(147, 127, 127);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #8c756f;
+}
+
+/* Css for Home ends Here  */
+
+/* Css for AddHomeList starts Here */
+
+.notesListHeading {
+  font-family: "Nunito Sans", sans-serif;
+  margin-left: 20px;
+  text-decoration: underline;
+  color: rgb(166, 164, 157);
+}
+
+.notesContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  border-radius: 25px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  border: 0.5px solid rgb(166, 164, 157);
+  font-size: 20px;
+  padding-left: 1rem;
+}
+
+.notesList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.notesTitle {
+  color: rgb(166, 164, 157);
+  flex: 1; /* This will make the title take up the available space */
+}
+
+.notesTime {
+  margin-right: 1rem; /* Adjust margin as needed */
+  color: rgb(166, 164, 157); /* You can apply your desired color */
+}
+
+.notesDelete {
+  cursor: pointer;
+  margin-right: 20px;
+  color: rgb(166, 164, 157);
+}
+
+.notesDelete:hover {
+  color: rgb(166, 164, 157);
+}
+
+.notesDesc {
+  color: rgb(166, 164, 157);
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
